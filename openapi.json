@@ -1,0 +1,30 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "PostgresScale API",
+    "version": "1.0.0",
+    "description": "PostgreSQL BRIN vs B-Tree Benchmarks, Autovacuum Tuning & PgBouncer Pooling",
+    "contact": {
+      "name": "PostgresScale",
+      "url": "https://postgrescale.pages.dev/"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://postgrescale.pages.dev/",
+      "description": "Production Edge"
+    }
+  ],
+  "paths": {
+    "/api/v1/health": {
+      "get": {
+        "summary": "Healthcheck",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  }
+}
